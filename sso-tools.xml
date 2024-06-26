@@ -1,16 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<md:EntityDescriptor entityID="lextest"
-    xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
-    <md:IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-        <md:KeyDescriptor use="signing">
-            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                <ds:X509Data>
-                    <ds:X509Certificate>MIIB2zCCAUQCAQAwDQYJKoZIhvcNAQELBQAwNjELMAkGA1UEBhMCR0IxEjAQBgNVBAoMCVNTTyBUb29sczETMBEGA1UECwwKTGV4YW5uZUlkUDAeFw0yMzA1MjUxOTU4NTBaFw00MzA1MjAxOTU4NTBaMDYxCzAJBgNVBAYTAkdCMRIwEAYDVQQKDAlTU08gVG9vbHMxEzARBgNVBAsMCkxleGFubmVJZFAwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAL3+ffhaxRu9JuH3AccK0QTcnDrwvkCPBxTodAJ/swfupME1vhANxIvfkr0HpLjIZb6Ntdl9lPrKj6p/rSGeWqrPG2LbD4Z+F+wEKetSLIa4E4AAWrRsl48B2SzFlTT/I6A26/rrYgaHbjhesCHl39mlBe+MvieAJB0keBOeF/WjAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAcgzLxzf7IfHwGNTvhWledIOWKGHWSbqXLL5sxEjM33Zy8Ps0BH0nZs4n4emn84+tSi3rLq8sqkTS5JMvmoOTfAMW1+co1o/IqpxPA/toWOyCl8OLquUNwZ1A8IqNuLlydkIcnM5+1sr00RTz3SqDpWj5Bzq9YU7rJAcE62zlg/c=</ds:X509Certificate>
-                </ds:X509Data>
-            </ds:KeyInfo>
-        </md:KeyDescriptor>
-        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
-        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.sso.tools/lexanne/saml/login/request"/>
-        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.sso.tools/lexanne/saml/login/request"/>
-    </md:IDPSSODescriptor>
+<?xml version="1.0"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" validUntil="2024-06-28T15:31:12Z" cacheDuration="PT1720020672S" entityID="lextest">
+  <md:IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIB2zCCAUQCAQAwDQYJKoZIhvcNAQELBQAwNjELMAkGA1UEBhMCR0IxEjAQBgNVBAoMCVNTTyBUb29sczETMBEGA1UECwwKTGV4YW5uZUlkUDAeFw0yMzA1MjUxOTU4NTBaFw00MzA1MjAxOTU4NTBaMDYxCzAJBgNVBAYTAkdCMRIwEAYDVQQKDAlTU08gVG9vbHMxEzARBgNVBAsMCkxleGFubmVJZFAwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAL3+ffhaxRu9JuH3AccK0QTcnDrwvkCPBxTodAJ/swfupME1vhANxIvfkr0HpLjIZb6Ntdl9lPrKj6p/rSGeWqrPG2LbD4Z+F+wEKetSLIa4E4AAWrRsl48B2SzFlTT/I6A26/rrYgaHbjhesCHl39mlBe+MvieAJB0keBOeF/WjAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAcgzLxzf7IfHwGNTvhWledIOWKGHWSbqXLL5sxEjM33Zy8Ps0BH0nZs4n4emn84+tSi3rLq8sqkTS5JMvmoOTfAMW1+co1o/IqpxPA/toWOyCl8OLquUNwZ1A8IqNuLlydkIcnM5+1sr00RTz3SqDpWj5Bzq9YU7rJAcE62zlg/c=</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:KeyDescriptor use="encryption">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIB2zCCAUQCAQAwDQYJKoZIhvcNAQELBQAwNjELMAkGA1UEBhMCR0IxEjAQBgNVBAoMCVNTTyBUb29sczETMBEGA1UECwwKTGV4YW5uZUlkUDAeFw0yMzA1MjUxOTU4NTBaFw00MzA1MjAxOTU4NTBaMDYxCzAJBgNVBAYTAkdCMRIwEAYDVQQKDAlTU08gVG9vbHMxEzARBgNVBAsMCkxleGFubmVJZFAwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAL3+ffhaxRu9JuH3AccK0QTcnDrwvkCPBxTodAJ/swfupME1vhANxIvfkr0HpLjIZb6Ntdl9lPrKj6p/rSGeWqrPG2LbD4Z+F+wEKetSLIa4E4AAWrRsl48B2SzFlTT/I6A26/rrYgaHbjhesCHl39mlBe+MvieAJB0keBOeF/WjAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAcgzLxzf7IfHwGNTvhWledIOWKGHWSbqXLL5sxEjM33Zy8Ps0BH0nZs4n4emn84+tSi3rLq8sqkTS5JMvmoOTfAMW1+co1o/IqpxPA/toWOyCl8OLquUNwZ1A8IqNuLlydkIcnM5+1sr00RTz3SqDpWj5Bzq9YU7rJAcE62zlg/c=</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://localhost:42069/saml/SSO"/>
+  </md:IDPSSODescriptor>
 </md:EntityDescriptor>
