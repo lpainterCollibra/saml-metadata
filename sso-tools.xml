@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<md:EntityDescriptor cacheDuration="P19907DT15H31M12.000S" entityID="https://lpaintercollibra.github.io/sso-tools.xml"
+<md:EntityDescriptor entityID="https://idp.sso.tools"
     xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
     <md:IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
         <md:KeyDescriptor use="signing">
