@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" entityID="https://idp.sso.tools/cdq-support">
+  <IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.sso.tools/cdq-support/saml/login/request"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.sso.tools/cdq-support/saml/login/request"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.sso.tools/cdq-support/saml/logout/request"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.sso.tools/cdq-support/saml/logout/request"/>
+    <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</NameIDFormat>
+    <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+    <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+    <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+    <KeyDescriptor use="signing">
+      <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <X509Data>
+          <X509Certificate>MIIB3TCCAUYCAQAwDQYJKoZIhvcNAQELBQAwNzELMAkGA1UEBhMCR0IxEjAQBgNVBAoMCVNTTyBUb29sczEUMBIGA1UECwwLQ0RRIFN1cHBvcnQwHhcNMjQwNjI3MTgwNDAxWhcNNDQwNjIyMTgwNDAxWjA3MQswCQYDVQQGEwJHQjESMBAGA1UECgwJU1NPIFRvb2xzMRQwEgYDVQQLDAtDRFEgU3VwcG9ydDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA5/V8vyd2+/00q4pra4AIiThEodM4qsV9jbJbGJzM6WCUFDjcrnow/BlhC/TRNA39f0g9X0d6brPDji3o+LrA7XME1ob+lvsV2Gf63gc32tdCAPFmhkz+m4rM35YP76LbXr8cDAXQQfN/mfPAP/vndVfg1PKxdG61DFDwAjquFgcCAwEAATANBgkqhkiG9w0BAQsFAAOBgQCZy5fnMl2VjjnEH8nUCqLg2TGD7qR0pcYbjMd/QzAH3Ojmt5oTq1VpDW8l1EQJ4SAvepXOSN+YBQR4ghEnceHJQGURlfwpKj5MUdhuj7O5JPpxQKGy6WhCWi6Thx2Ego6wKcWq9EssK57DagnxjfFjnd5DhyQrwHwMAKDYiibAnw==</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </KeyDescriptor>
+  </IDPSSODescriptor>
+</EntityDescriptor>
